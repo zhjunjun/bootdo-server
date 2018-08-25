@@ -1,16 +1,12 @@
 package com.bootdo.common.redis.shiro;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.*;
+
 /**
- * @author bootdo 1992lcg@163.com
+ * @author zhangjunjun ycuzjj@163.com
  * @version V1.0
  */
 public class SerializeUtils {
@@ -57,7 +53,7 @@ public class SerializeUtils {
     /**
      * 序列化
      * @param object
-     * @return
+     * @return byte[]
      */
     public static byte[] serialize(Object object) {
 
